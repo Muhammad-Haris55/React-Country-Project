@@ -1,0 +1,37 @@
+/* 
+
+.card {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.card img {
+    width: 100%;
+}
+
+.dark {
+    background-color: #271e1e;
+}
+
+.inputhandler,
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnholder {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+} */
