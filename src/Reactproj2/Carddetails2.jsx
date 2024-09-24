@@ -3,10 +3,10 @@ import { useLocation } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import {Datacontext} from  "../Context/Apicontext"
 // import { Card } from './Card'
-import Card2, { Card } from './Card'
-import "./Carddetails.css"
+import  { Card } from './Card'
+import "./Carddetails2.css"
 
-function Carddetails() {
+function Carddetails2() {
     const Singlecard=Card()
 
     // To fetch from url
@@ -38,4 +38,4 @@ function Carddetails() {
     )
 }
 
-export default Carddetails
+export default Carddetails2

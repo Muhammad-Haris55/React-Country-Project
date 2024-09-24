@@ -1,0 +1,35 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.cardholder2{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    
+}
+.flagimg{
+    /* border: 2px solid black; */
+    padding: 90px;
+    
+}
+.flagimg img{
+    width: 100%;
+    
+}
+.cdetails{
+    /* height: 100%; */
+    /* width: 100%; */
+    height: 80%;
+    /* padding-top: 120px; */
+    padding-left: 50px;
+    display: flex;
+    /* border: 2px solid black; */
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}

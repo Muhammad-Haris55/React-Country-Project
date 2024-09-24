@@ -84,6 +84,7 @@ import { useEffect, useState } from 'react';
 // }
 
 function Axios2() {
+    // Axios Get Api
     const [datas, setData] = useState([])
     const [error, setError] = useState('')
     const head = useRef('')
@@ -109,6 +110,7 @@ function Axios2() {
         }
     }, [])
 
+    // Axios Post Api
 
     const [perror, serror] = useState('')
     const handleform = async (event) => {
@@ -117,7 +119,7 @@ function Axios2() {
             const headholder = head.current.value
             const bodyholder = body.current.value
             const postdata = await axios.post("https://jsonplaceholder.typicode.com/posts", { head: headholder, body: bodyholder })
-            console.log(postdata)
+            // console.log(postdata)
         }
         catch (e) {
             console.log(e.message)
@@ -161,7 +163,6 @@ function Axios2() {
                     </div>
                     <button type="submit" className="btn btn-primary my-2 text-center" >Submit</button>
                 </form>
-                {/* <button type="button" className="btn btn-primary my-2" onClick={handleinput}>Submit</button> */}
             </div>
 
         </>

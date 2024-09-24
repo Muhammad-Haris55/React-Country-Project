@@ -11,7 +11,6 @@ function Darkmode() {
     if (mode) {
         document.body.classList.add("dark")
         console.log(mode)
-        
     }
     else {
             document.body.classList.remove("dark")

@@ -2,14 +2,30 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import { Contextprovider } from './Context/Apicontext';
+import { Dataprovider } from './Context/Apicontext';
+import { Cartprovider } from './Context/Apicontext';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-// import { BrowserRouter } from 'react-browser-router';
+import { Authprovider } from "./Login & Signup/Authcontext"
+
+import { store } from './Redux/Statemanagement';
+import { Provider } from 'react-redux'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <App />
+    <Dataprovider>
+      <Contextprovider>
+        <Cartprovider>
+          <Authprovider>
+            <Provider store={store}>
+              <App />
+            </Provider>
+          </Authprovider>
+        </Cartprovider>
+      </Contextprovider>
+    </Dataprovider>
   </BrowserRouter>
 );
 

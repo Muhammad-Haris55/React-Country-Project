@@ -1,15 +1,17 @@
 import axios from 'axios'
 import React, { createContext, useEffect, useRef, useState } from 'react'
-import './Main.css'
+import './Main2.css'
 import { useNavigate } from 'react-router-dom'
-import Carddetails from './Carddetails'
+import Carddetails2 from './Carddetails2'
 import { Datacontext } from '../Context/Apicontext'
 import Card2 from "./Card"
 // import { Apicontext } from '../Context/Apicontext'
 
 import { useContext } from 'react'
+import { useDispatch } from 'react-redux'
+import { GetApiData } from '../Redux2/Datareducer'
 
-function Main() {
+function Main2() {
     const [filters, setfilters] = useState('')
     const [select, setselect] = useState('')
     const nav = useNavigate()
@@ -18,20 +20,14 @@ function Main() {
 
     // Using context to send Fetched api data in to context api
     const senddata = useContext(Datacontext)
+    
+    const dispatch=useDispatch()
 
     useEffect(() => {
-        async function getapidata() {
-            try {
-                const { data } = await axios.get('https://restcountries.com/v3.1/all')
-                // Sending the fetched api data in to context api updating hook
-                senddata.getdata(data)
-            } catch (e) {
-                console.log(e.message)
-            }
-        }
-        getapidata()
+       
+        dispatch(()=>{GetApiData()})
+
     }, [])
-    
     // Getting the data from fields and validating it 
     const searchcountry = (event) => {
         let value = search.current.value.split(',')
@@ -162,5 +158,5 @@ function Main() {
     )
 }
 
-export default Main;
+export default Main2;
 // export {data};

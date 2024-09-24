@@ -23,7 +23,6 @@ function Parent() {
             }
         }
     }
-    // console.log("hi")
 
     const getcdata = (name, age, school) => {
         sn(name)
@@ -43,9 +42,7 @@ function Parent() {
 
     let [childimgurl, setming] = useState([])
     const geturl=(links)=>{
-        
         console.log(childimgurl)
-
 
     }
     geturl()
@@ -63,8 +60,6 @@ function Parent() {
         <>
 
             <h1>{cu}</h1>
-            {/* <img src={childimgurl} alt="" /> */}
-            {/* <img src={childimgurl} alt="" /> */}
             <h2>Hi iam Parent</h2>
             {data}
             <Child getdata={getcdata} pname={parentname} updt={setcu} links={imgurls} getarr={getcdata2} geturl={setming} />
@@ -78,47 +73,6 @@ function Parent() {
                 <button onClick={next}>Next</button>
             </div>
 
-            {/* {
-                imgsurl.map((item) => {
-                    <div className="card" >
-                        <img src={item} alt="" />
-                        <h6 className='text-center'>Title: </h6>
-                        <h6>Item No: </h6>
-                        <p>Price: </p>
-                        <button onClick={next}>Next</button>
-                    </div>
-
-                })
-            } */}
-
-            {/* <div className="card" >
-                <img src={imgurl[count]} alt="" />
-                <h6 className='text-center'>Title: </h6>
-                <h6>Item No: </h6>
-                <p>Price: </p>
-                <button onClick={next}>Next</button>
-            </div> */}
-            {/* {urls.map(() => {
-                return (
-
-                    <div className="card" >
-                        <img src={imgurl[count]} alt="" />
-                        <h6 className='text-center'>Title: </h6>
-                        <h6>Item No: </h6>
-                        <p>Price: </p>
-                        <button onClick={next}>Next</button>
-                    </div>
-
-                )
-            })} */}
-            {/* {data} */}
-            {/* <div className="card" >
-                <img src={imgsurl} alt="" />
-                <h6 className='text-center'>Title: </h6>
-                <h6>Item No: </h6>
-                <p>Price: </p>
-                <button onClick={next}>Next</button>
-            </div> */}
 
         </>
 

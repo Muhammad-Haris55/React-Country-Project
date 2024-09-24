@@ -1,0 +1,21 @@
+.textchange{
+    text-decoration: line-through;
+    /* background-color: yellow; */
+}
+li{
+    list-style: none;
+    width: min-content;
+    white-space: nowrap;
+    gap: 10px;
+    display: flex!important;
+    align-items: center!important;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+    /* gap: 20px!important; */
+}
+#hi{
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+}
